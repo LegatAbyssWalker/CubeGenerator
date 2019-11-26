@@ -1,0 +1,7 @@
+﻿  PlayingState.cpp
+C:\Users\david\OneDrive\Desktop\OpenGL First Test\GLWindow.h(20,37): warning C4244: 'return': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\david\OneDrive\Desktop\OpenGL First Test\GLWindow.h(21,38): warning C4244: 'return': conversion from 'GLint' to 'GLfloat', possible loss of data
+C:\Users\david\OneDrive\Desktop\OpenGL First Test\PlayingState.cpp(16,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\david\OneDrive\Desktop\OpenGL First Test\PlayingState.cpp(19,9): warning C4018: '<': signed/unsigned mismatch
+C:\Users\david\OneDrive\Desktop\OpenGL First Test\PlayingState.cpp(38,23): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+  OpenGL First Test.vcxproj -> C:\Users\david\OneDrive\Desktop\OpenGL First Test\Debug\OpenGL First Test.exe
