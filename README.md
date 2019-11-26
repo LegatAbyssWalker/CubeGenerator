@@ -18,4 +18,4 @@ A functional cube generator with states and events using OpenGL and C++.
   -  www.YouTube.com/LegitMegaWalls-52
   
 * Github
-  - https://github.com/LegatLastAbyssWalker
+  - https://github.com/LegatAbyssWalker
