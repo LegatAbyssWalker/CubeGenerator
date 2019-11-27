@@ -2,7 +2,7 @@
 A functional cube generator with states and events using OpenGL and C++.
 
 # Dependancies
-* OpenGL and GLEW.
+* OpenGL, GLFW and GLEW.
 * C++17 with a supporting compiler!
 
 # Contains
