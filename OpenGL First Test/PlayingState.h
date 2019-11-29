@@ -19,6 +19,7 @@ class StateMachine;
 #include "MoreInfo.h"
 #include "Texture.h"
 #include "CubeGenerator.h"
+#include "Player.h"
 
 class PlayingState : public State {
 	public:
@@ -29,6 +30,8 @@ class PlayingState : public State {
 		void render();
 
 	private:
+		Player player;
+
 		//Vectors
 		std::vector<CubeGenerator> cubeVector;
 

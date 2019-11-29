@@ -70,25 +70,21 @@ void CubeGenerator::setPosition(glm::vec3 position) {
 	this->position = position;
 }
 
-void CubeGenerator::setScale(glm::vec3 scale) {
-	scale = scaleValue;
-}
-
-void CubeGenerator::update(GLWindow& glWindow, Camera& camera) {
+void CubeGenerator::render(GLWindow& glWindow, Camera& camera) {
+	program->useProgram();
+	
+	//Model matrix
+	glm::mat4 model(1.f);
 	model = glm::translate(model, position);
-	model = glm::scale(model, scaleValue);
+	model = glm::scale(model, glm::vec3(0.5f, 0.5f, 0.5f));
 
 	//Camera matrix
-	view = camera.calculateViewMatrix();
+	glm::mat4 view = camera.calculateViewMatrix();
 
 	//Projection
-	projection = glm::perspective(glm::radians(45.f), (GLfloat)glWindow.getBufferWidth() / glWindow.getBufferHeight(), 0.1f, 100.f);
-}
+	glm::mat4 projection = glm::perspective(glm::radians(45.f), (GLfloat)glWindow.getBufferWidth() / glWindow.getBufferHeight(), 0.1f, 100.f);
 
-void CubeGenerator::render(GLWindow& glWindow) {
-	program->useProgram();
-
-	//Uniform
+	//Uniforms
 	program->setMat4("model", model);
 	program->setMat4("view", view);
 	program->setMat4("projection", projection);

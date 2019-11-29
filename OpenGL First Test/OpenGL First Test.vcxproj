@@ -141,6 +141,7 @@
     <ClCompile Include="GLWindow.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayingState.cpp" />
     <ClCompile Include="Program.cpp" />
     <ClCompile Include="State.cpp" />
@@ -154,6 +155,7 @@
     <ClInclude Include="GLWindow.h" />
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="MoreInfo.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="PlayingState.h" />
     <ClInclude Include="Program.h" />
     <ClInclude Include="State.h" />
