@@ -5,8 +5,8 @@
 #include "Mesh.h"
 #include "Program.h"
 #include "Texture.h"
-#include "Camera.h"
 #include "GLWindow.h"
+#include "FileLocations.h"
 
 #include <iostream>
 #include <vector>
@@ -18,7 +18,7 @@ class CubeGenerator {
 		void setTexture(std::shared_ptr<Texture> texture);
 		void setPosition(glm::vec3 position = glm::vec3(0.f, 0.f, 0.f));
 
-		void render(GLWindow& glWindow, Camera& camera);
+		void render(GLWindow& glWindow, const glm::mat4 viewMatrix);
 
 		glm::vec3 getPosition();
 

@@ -1,21 +1,9 @@
-﻿  CubeGenerator.cpp
+﻿  Player.cpp
 C:\Users\david\OneDrive\Desktop\OpenGL First Test\GLWindow.h(20,37): warning C4244: 'return': conversion from 'GLint' to 'GLfloat', possible loss of data
 C:\Users\david\OneDrive\Desktop\OpenGL First Test\GLWindow.h(21,38): warning C4244: 'return': conversion from 'GLint' to 'GLfloat', possible loss of data
-  Game.cpp
-C:\Users\david\OneDrive\Desktop\OpenGL First Test\CubeGenerator.cpp(59,2): warning C4305: 'initializing': truncation from 'double' to '_Ty'
-C:\Users\david\OneDrive\Desktop\OpenGL First Test\CubeGenerator.cpp(59,2): warning C4305:         with
-C:\Users\david\OneDrive\Desktop\OpenGL First Test\CubeGenerator.cpp(59,2): warning C4305:         [
-C:\Users\david\OneDrive\Desktop\OpenGL First Test\CubeGenerator.cpp(59,2): warning C4305:             _Ty=GLfloat
-C:\Users\david\OneDrive\Desktop\OpenGL First Test\CubeGenerator.cpp(59,2): warning C4305:         ]
-C:\Users\david\OneDrive\Desktop\OpenGL First Test\GLWindow.h(20,37): warning C4244: 'return': conversion from 'GLint' to 'GLfloat', possible loss of data
-  Main.cpp
-C:\Users\david\OneDrive\Desktop\OpenGL First Test\GLWindow.h(21,38): warning C4244: 'return': conversion from 'GLint' to 'GLfloat', possible loss of data
-C:\Users\david\OneDrive\Desktop\OpenGL First Test\GLWindow.h(20,37): warning C4244: 'return': conversion from 'GLint' to 'GLfloat', possible loss of data
-  PlayingState.cpp
-C:\Users\david\OneDrive\Desktop\OpenGL First Test\GLWindow.h(21,38): warning C4244: 'return': conversion from 'GLint' to 'GLfloat', possible loss of data
-C:\Users\david\OneDrive\Desktop\OpenGL First Test\GLWindow.h(20,37): warning C4244: 'return': conversion from 'GLint' to 'GLfloat', possible loss of data
-C:\Users\david\OneDrive\Desktop\OpenGL First Test\GLWindow.h(21,38): warning C4244: 'return': conversion from 'GLint' to 'GLfloat', possible loss of data
-C:\Users\david\OneDrive\Desktop\OpenGL First Test\PlayingState.cpp(15,24): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
-C:\Users\david\OneDrive\Desktop\OpenGL First Test\PlayingState.cpp(29,23): warning C4244: 'initializing': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\david\OneDrive\Desktop\OpenGL First Test\Player.cpp(22,2): warning C4305: 'initializing': truncation from 'double' to '_Ty'
+C:\Users\david\OneDrive\Desktop\OpenGL First Test\Player.cpp(22,2): warning C4305:         with
+C:\Users\david\OneDrive\Desktop\OpenGL First Test\Player.cpp(22,2): warning C4305:         [
+C:\Users\david\OneDrive\Desktop\OpenGL First Test\Player.cpp(22,2): warning C4305:             _Ty=GLfloat
+C:\Users\david\OneDrive\Desktop\OpenGL First Test\Player.cpp(22,2): warning C4305:         ]
   OpenGL First Test.vcxproj -> C:\Users\david\OneDrive\Desktop\OpenGL First Test\Debug\OpenGL First Test.exe
