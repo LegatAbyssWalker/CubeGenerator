@@ -5,10 +5,12 @@ A functional cube generator with states and events using OpenGL and C++.
 * OpenGL, GLFW and GLEW.
 * C++17 with a supporting compiler!
 
-# Contains
-* States system
-* Shader and Mesh class
-* Cube Generator class
+# Features
+* `States` system
+* `Shader` and `Mesh` class
+* `CubeGenerator` class
+* Crosshair in `Player` class
+* Failsafe texture system. 
 
 # Bugs
 * Camera is a little buggy and choppy.
