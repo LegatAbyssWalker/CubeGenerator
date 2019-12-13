@@ -8,7 +8,7 @@ PlayingState::PlayingState(StateMachine& machine, GLWindow& glWindow, bool repla
 
 
 	//Cube
-	world = std::make_unique<World>(20);
+	world = std::make_unique<World>(16);
 }
 
 void PlayingState::updateEvents() {
@@ -29,6 +29,10 @@ void PlayingState::update() {
 	/*-------------------------------------------------------------------------------------------------------------------*/
 	//Player updates
 	player->update(deltaTime);
+
+	/*-------------------------------------------------------------------------------------------------------------------*/
+	//World updates
+	world->update();
 }
 
 void PlayingState::render() {

@@ -8,21 +8,25 @@
 #include "MoreInfo.h"
 #include "FileLocations.h"
 #include "Texture.h"
+#include "HeightGenerator.h"
+#include "ChunkGenerator.h"
 
 #include <iostream>
 #include <vector>
+#include <memory>
 
 class World {
 	public:
 		World() = default;
-		World(GLuint blockAmount);
+		World(const float HEIGHT_AMPLITUDE);
 	
 		void update();
 		void render(GLWindow& glWindow, glm::mat4 viewMatrix);
 
-
+		
 	private:
-		std::vector<CubeGenerator> cubeVector;
+		std::unique_ptr<HeightGenerator> heightGenerator = nullptr;
+		std::vector<std::unique_ptr<ChunkGenerator>> chunkVector;
 };
 
 #endif

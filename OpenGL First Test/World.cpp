@@ -1,20 +1,26 @@
 #include "World.h"
 
-World::World(GLuint blockAmount) {
-	//Cube generation
-	cubeVector.resize(blockAmount);
-	for (GLsizei x = 0; x < cubeVector.size(); x++) {
-		cubeVector[x].setTexture(Texture::get(GRASS_TEXTURE_LOCATION));
-		cubeVector[x].setPosition(glm::vec3(x, 0, 0));
+World::World(const float HEIGHT_AMPLITUDE) {
+	//Height generator
+	heightGenerator = std::make_unique<HeightGenerator>(HEIGHT_AMPLITUDE);
+
+	//Chunk generation
+	GLsizei chunkXPos = 0;
+
+	for (GLsizei x = 0; x < 2; x++) {
+		chunkVector.emplace_back(new ChunkGenerator(chunkXPos));
+		chunkXPos += chunkVector[x]->getChunkSize();
 	}
 }
 
 void World::update() {
-	//Collision detection ? 
+	for (auto& chunk : chunkVector) {
+		chunk->update();
+	}
 }
 
 void World::render(GLWindow& glWindow, glm::mat4 viewMatrix) {
-	for (auto& cube : cubeVector) {
-		cube.render(glWindow, viewMatrix);
+	for (auto& chunk : chunkVector) {
+		chunk->render(glWindow, viewMatrix);
 	}
 }

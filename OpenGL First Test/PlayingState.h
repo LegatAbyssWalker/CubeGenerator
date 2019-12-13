@@ -34,6 +34,9 @@ class PlayingState : public State {
 		std::unique_ptr<Player> player = nullptr;
 		std::unique_ptr<World> world = nullptr;
 
+		//Variables and Booleans
+		GLboolean isPaused = false;
+
 		//Timing
 		GLfloat deltaTime = 0.f;
 		GLfloat lastFrame;

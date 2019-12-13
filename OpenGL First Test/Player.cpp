@@ -26,7 +26,7 @@ Player::Player(glm::vec3 position) {
 	texture = Texture::get(CROSSHAIR_TEXTURE_LOCATION);
 
 	//Camera/
-	camera = Camera(position, glm::vec3(0.f, 1.f, 0.f), -90.f, 0.f, 2.5f, 0.3f);
+	camera = Camera(position, glm::vec3(0.f, 1.f, 0.f), -90.f, 0.f, 5.f, 0.3f);
 }
 
 void Player::updateEvents(GLWindow& glWindow) {
