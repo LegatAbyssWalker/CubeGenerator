@@ -11,6 +11,8 @@ A functional cube generator with states and events using OpenGL and C++.
 * `CubeGenerator` class
 * Crosshair in `Player` class
 * Failsafe texture system. 
+* `World` class.
+* `ChunkGenerator` class. 
 
 # Bugs
 * Camera is a little buggy and choppy.
